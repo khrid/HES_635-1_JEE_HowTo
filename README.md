@@ -1,15 +1,29 @@
-# HES_635-1_JEE_HowTo
-
-> :warning: **Work in progress**
 
 Ce repository a pour but d'expliquer la mise en place de l'environnement de développement pour le cours **635-1 JEE** de la HES-SO Valais/Wallis avec [IntelliJ Ultimate](https://www.jetbrains.com/fr-fr/community/education/#students).
+
+  * [Infos](#infos)
+- [Configuration](#configuration)
+  * [Installation de la version de Java](#installation-de-la-version-de-java)
+  * [Préparation du projet](#préparation-du-projet)
+  * [Création de la structure](#création-de-la-structure)
+    + [database](#database)
+    + [tools](#tools)
+  * [Import de la structure dans Intellij](#import-de-la-structure-dans-intellij)
+  * [Configuration du application server](#configuration-du-application-server)
+- [Mise en place des TP](#mise-en-place-des-tp)
+  * [Projet maven (TP1)](#projet-maven-tp1)
+    + [Configuration](#configuration)
+    + [Test](#test)
+  * [Projet Java Entreprise (TP2 et suivants)](#projet-java-entreprise-tp2-et-suivants)
+    + [Configuration](#configuration-1)
+    + [Test](#test-1)
 
 ## Infos
 Cette marche à suivre suppose l'organisation suivante :
  - **Un** projet contiendra l'ensemble du cours
  - Les différents TP / exercices seront gérés dans des **modules**
 
-# Configuration d'IntelliJ
+# Configuration
 ## Installation de la version de Java
 Suivre les étapes sur Cyberlearn pour télécharger et installer l'OpenJDK 14.0.2.
 
@@ -50,7 +64,7 @@ Clic sur `Finish`, puis `Apply`.
 
 ![image](https://user-images.githubusercontent.com/389415/110218792-e459b300-7ebb-11eb-952b-4af822ad6cbe.png)
 
-## Configuration du serveur d'application
+## Configuration du application server
 Ouvrir les paramètres via le menu `File > Settings`, puis aller dans le menu `Build, Execution, Deployment | Application Servers`. Cliquer sur le `+` pour ajouter un nouveau `JBoss server`.
 
 ![image](https://user-images.githubusercontent.com/389415/110219437-84fda200-7ebf-11eb-9dd3-74a046a58913.png)
