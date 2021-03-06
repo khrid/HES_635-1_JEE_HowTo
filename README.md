@@ -1,7 +1,6 @@
 
 Ce repository a pour but d'expliquer la mise en place de l'environnement de développement pour le cours **635-1 JEE** de la HES-SO Valais/Wallis avec [IntelliJ Ultimate](https://www.jetbrains.com/fr-fr/community/education/#students).
 
-  * [Infos](#infos)
 - [Configuration](#configuration)
   * [Installation de la version de Java](#installation-de-la-version-de-java)
   * [Préparation du projet](#préparation-du-projet)
