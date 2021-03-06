@@ -11,6 +11,7 @@ Cette marche à suivre suppose l'organisation suivante :
 
 # Configuration d'IntelliJ
 ## Installation de la version de Java
+Suivre les étapes sur Cyberlearn pour télécharger et installer l'OpenJDK 14.0.2.
 
 ## Préparation du projet
 Dans IntelliJ, créer un nouveau projet via le menu `File > New > Project`. Dans la fenêtre `New Project`, sélectionner `Empty Project`.
@@ -49,6 +50,20 @@ Clic sur `Finish`, puis `Apply`.
 
 ![image](https://user-images.githubusercontent.com/389415/110218792-e459b300-7ebb-11eb-952b-4af822ad6cbe.png)
 
+## Configuration du serveur d'application
+Ouvrir les paramètres via le menu `File > Settings`, puis aller dans le menu `Build, Execution, Deployment | Application Servers`. Cliquer sur le `+` pour ajouter un nouveau `JBoss server`.
+
+![image](https://user-images.githubusercontent.com/389415/110219437-84fda200-7ebf-11eb-9dd3-74a046a58913.png)
+
+Rechercher l'emplacement du serveur Wildfly qui se trouve dans le dossier `tools`.
+
+![image](https://user-images.githubusercontent.com/389415/110219461-b4141380-7ebf-11eb-9126-76db0aa420ff.png)
+
+Valider en cliquant sur `OK`.
+
+![image](https://user-images.githubusercontent.com/389415/110219479-c2fac600-7ebf-11eb-955d-9b654d8df66f.png)
+
+Les libraries se chargent, puis le serveur est ajouté. Il est possible de le renommer si souhaité.
 
 # Mise en place des TP
 ## Projet maven (TP1)
@@ -96,3 +111,49 @@ Process finished with exit code 0
 Le code s'exécute avec succès.
 
 ## Projet Java Entreprise (TP2 et suivants)
+### Configuration
+
+Dans IntelliJ, créer un nouveau module via le menu `File > New > Module`. Dans la fenêtre `New Module`, sélectionner `Java Entreprise`. S'assurer que le paramètre `Application server` corresponde à celui configuré précédemment. 
+
+![image](https://user-images.githubusercontent.com/389415/110219576-6c41bc00-7ec0-11eb-86c4-e7e0b1b19acf.png)
+
+Cliquer sur `Next`. Suivant le TP, ajouter les librairies nécessaires (par exemple `Servlet`, `Server Faces`, etc..). Cliquer sur `Next`, puis renseigner l'emplacement du module selon la capture, puis `Finish`.
+
+![image](https://user-images.githubusercontent.com/389415/110219649-d78b8e00-7ec0-11eb-9399-cf87ea086f21.png)
+
+Le module est créé.
+
+![image](https://user-images.githubusercontent.com/389415/110218804-ede31b00-7ebb-11eb-9309-3ddbeb650f8e.png)
+
+Une nouvelle configuration de déploiement a été créée automatiquement :
+
+![image](https://user-images.githubusercontent.com/389415/110219668-fbe76a80-7ec0-11eb-8a54-e39f1a304881.png)
+
+![image](https://user-images.githubusercontent.com/389415/110219672-00138800-7ec1-11eb-8879-13d2959df520.png)
+
+
+Télécharger le zip avec la donnée du TP depuis Cyberlearn, puis l'ouvrir via l'explorateur de fichier. Copier le contenu du dossier `src` dans le dossier `src` du TP1 dans IntelliJ. Les fichiers `.class` peuvent être ignorés.
+
+Dans IntelliJ, ouvrir le fichier pom.xml et remplacer le contenu par celui du [pom.xml adapté](src/tp2+/pom.xml).
+
+Cliquer sur l'icône ![image](https://user-images.githubusercontent.com/389415/110219114-87f79300-7ebd-11eb-90b7-b8c6ffe6b98f.png) qui s'affiche pour charger les changements effectués dans le pom.xml.
+
+![image](https://user-images.githubusercontent.com/389415/110219123-ab224280-7ebd-11eb-8685-42243f701c9b.png)
+
+Cliquer sur ![image](https://user-images.githubusercontent.com/389415/110218932-a6a95a00-7ebc-11eb-832b-82d9b71d5394.png) pour builder le projet.
+
+![image](https://user-images.githubusercontent.com/389415/110219138-c3925d00-7ebd-11eb-9039-8d542ff18e21.png)
+
+### Test
+:warning: **Ne pas oublier de démarrer la base de données et de la populer.**
+
+Exécuter la configuration créée par défaut en cliquant sur le bouton vert ![image](https://user-images.githubusercontent.com/389415/110219922-6947cb00-7ec2-11eb-92a5-8345f7e6ef80.png)
+
+Le serveur Wildfly va démarrer, puis un nouvel onglet va s'ouvrir.
+
+![image](https://user-images.githubusercontent.com/389415/110219999-00ad1e00-7ec3-11eb-9300-d0af71ff5372.png)
+
+Il est possible d'avoir le message `404 - Not found`. Dans ce cas, s'assurer de l'URL de déploiement dans les logs : 
+`21:25:43,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT" (runtime-name: "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT.war")`
+
+ainsi que du nom du fichier (x)html dans le dossier `webapp`
