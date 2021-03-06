@@ -78,7 +78,8 @@ Cliquer sur ![image](https://user-images.githubusercontent.com/389415/110218932-
 ![image](https://user-images.githubusercontent.com/389415/110219138-c3925d00-7ebd-11eb-9039-8d542ff18e21.png)
 
 ### Test
- :warning: **Ne pas oublier de démarrer la base de données et de la populer.**
+:warning: **Ne pas oublier de démarrer la base de données et de la populer.**
+ 
 Ouvrir le fichier `src/main/java/ch/hevs/test/TestClient`, et exécuter le code de la classe.
 
 ![image](https://user-images.githubusercontent.com/389415/110219203-1ec44f80-7ebe-11eb-8a6d-531e68270838.png)
@@ -92,7 +93,6 @@ Client 4 modified
 
 Process finished with exit code 0
 ```
-
-Le code s'exécuter avec succès.
+Le code s'exécute avec succès.
 
 ## Projet Java Entreprise (TP2 et suivants)
