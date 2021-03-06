@@ -154,6 +154,7 @@ Le serveur Wildfly va démarrer, puis un nouvel onglet va s'ouvrir.
 ![image](https://user-images.githubusercontent.com/389415/110219999-00ad1e00-7ec3-11eb-9300-d0af71ff5372.png)
 
 Il est possible d'avoir le message `404 - Not found`. Dans ce cas, s'assurer de l'URL de déploiement dans les logs : 
+
 `21:25:43,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT" (runtime-name: "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT.war")`
 
 ainsi que du nom du fichier (x)html dans le dossier `webapp`
