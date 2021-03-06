@@ -54,6 +54,8 @@ Clic sur `Finish`, puis `Apply`.
 ## Projet maven (TP1)
 Le TP1 est particulier car il n'utilise pas la technologie Java Entreprise. Il sert de démonstration aux limitations existantes.
 
+### Configuration
+
 Dans IntelliJ, créer un nouveau module via le menu `File > New > Module`. Dans la fenêtre `New Module`, sélectionner `Maven`.
 Cliquer sur `Next`. Renseigner les champs suivants selon la capture, puis cliquer sur `Finish`
 
@@ -75,8 +77,22 @@ Cliquer sur ![image](https://user-images.githubusercontent.com/389415/110218932-
 
 ![image](https://user-images.githubusercontent.com/389415/110219138-c3925d00-7ebd-11eb-9039-8d542ff18e21.png)
 
+### Test
+ :warning: **Ne pas oublier de démarrer la base de données et de la populer.**
+Ouvrir le fichier `src/main/java/ch/hevs/test/TestClient`, et exécuter le code de la classe.
 
+![image](https://user-images.githubusercontent.com/389415/110219203-1ec44f80-7ebe-11eb-8a6d-531e68270838.png)
 
+```
+1-Zidane-Zinedine
+2-Platini-Michel
+3-Papin-Jean-Pierre
+Client inserts in the database the id 4
+Client 4 modified
 
+Process finished with exit code 0
+```
+
+Le code s'exécuter avec succès.
 
 ## Projet Java Entreprise (TP2 et suivants)
