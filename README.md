@@ -147,7 +147,9 @@ Cliquer sur ![image](https://user-images.githubusercontent.com/389415/110218932-
 ### Test
 :warning: **Ne pas oublier de démarrer la base de données et de la populer.**
 
-Exécuter la configuration créée par défaut en cliquant sur le bouton vert ![image](https://user-images.githubusercontent.com/389415/110219922-6947cb00-7ec2-11eb-92a5-8345f7e6ef80.png)
+Exécuter la configuration créée par défaut en cliquant sur le bouton vert
+
+![image](https://user-images.githubusercontent.com/389415/110219922-6947cb00-7ec2-11eb-92a5-8345f7e6ef80.png)
 
 Le serveur Wildfly va démarrer, puis un nouvel onglet va s'ouvrir.
 
