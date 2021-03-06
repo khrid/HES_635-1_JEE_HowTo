@@ -159,4 +159,14 @@ Il est possible d'avoir le message `404 - Not found`. Dans ce cas, s'assurer de 
 
 `21:25:43,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT" (runtime-name: "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT.war")`
 
-ainsi que du nom du fichier (x)html dans le dossier `webapp`
+ainsi que du nom du fichier (x)html dans le dossier `webapp`.
+
+Si nécessaire adapter les paramètres du déploiement : 
+
+![image](https://user-images.githubusercontent.com/389415/110220066-8f219f80-7ec3-11eb-8100-8f6dfa5177b4.png)
+
+Modifier le paramètre `URL`
+
+![image](https://user-images.githubusercontent.com/389415/110220084-ae203180-7ec3-11eb-8155-d4d3438fc782.png)
+
+
