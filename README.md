@@ -30,3 +30,12 @@ Copier le contenu du dossier `database` fourni sur Cyberlearn dans le dossier da
 Copier le contenu du dossier `tools` fourni sur Cyberlearn dans le dossier database créé.
 
 ![image](https://user-images.githubusercontent.com/389415/110202232-8c915c80-7e67-11eb-90d9-a35313ddf3f3.png)
+
+## Projet maven (TP1)
+Le TP1 est particulier car il n'utilise pas la technologie Java Entreprise. Il sert de démonstration aux limitations existantes.
+
+Dans Intellij, créer un nouveau module via le menu `File > New > Module`. Dans la fenêtre `New Module`, sélectionner `Maven`.
+Cliquer sur `Next`.
+
+
+## Projet Java Entreprise (TP2 et suivants)
