@@ -16,6 +16,7 @@ Ce repository a pour but d'expliquer la mise en place de l'environnement de dév
   * [Projet Java Entreprise (TP2 et suivants)](#projet-java-entreprise-tp2-et-suivants)
     + [Configuration](#configuration-1)
     + [Test](#test-1)
+      + [Erreur 404 not found](#erreur-404-not-found)
 
 ## Infos
 Cette marche à suivre suppose l'organisation suivante :
@@ -168,6 +169,7 @@ Le serveur Wildfly va démarrer, puis un nouvel onglet va s'ouvrir.
 
 ![image](https://user-images.githubusercontent.com/389415/110219999-00ad1e00-7ec3-11eb-9300-d0af71ff5372.png)
 
+#### Erreur 404 Not found
 Il est possible d'avoir le message `404 - Not found`. Dans ce cas, s'assurer de l'URL de déploiement dans les logs : 
 
 `21:25:43,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT" (runtime-name: "TP02-WEB-JSP-SERVLET-E-0.0.1-SNAPSHOT.war")`
